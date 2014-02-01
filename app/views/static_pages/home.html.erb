@@ -2,15 +2,14 @@
 		<title>FlyHappy</title>
 	</head>
 	<body>
-	<nav>
-		<%= link_to image_tag("logo.png", alt: "logo", class: "logo"), 'static_pages#home' %>
+	<nav class="home">
+		<%= link_to image_tag("logo_white2.png", alt: "logo", class: "logo"), 'static_pages#home' %>
 		<ul class="home">
-			<li><%= link_to '#'%></li>
-			<li><%= link_to '#'%></li>
-			<li><%= link_to '#'%></li>
+			<li class="home"><%= link_to 'About', '#', class: "home"%></li>
+			<li class="home"><%= link_to 'Sign In', '#', class: "home"%></li>
 		</ul>
 	</nav>
-	<div>
+	<div class="home">
 		<h1>Welcome to FlyHappy!</h1>
 		<p>Input your packing list for upcoming travel. Discover must-packs from others in your job field.</p>
 	</div>
