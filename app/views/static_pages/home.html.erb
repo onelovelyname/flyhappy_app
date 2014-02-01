@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+
 	<head>
 		<title>FlyHappy</title>
 	</head>
@@ -5,14 +7,16 @@
 	<nav class="home">
 		<%= link_to image_tag("logo_white2.png", alt: "logo", class: "logo"), 'static_pages#home' %>
 		<ul class="home">
-			<li class="home"><%= link_to 'About', '#', class: "home"%></li>
+			<li class="home"><%= link_to 'About', about_path, class: "home"%></li>
 			<li class="home"><%= link_to 'Sign In', '#', class: "home"%></li>
 		</ul>
 	</nav>
 	<div class="home">
 		<h1 class="home">Welcome to FlyHappy!</h1>
 		<p class="home">Input your packing list for upcoming travel. <br>Discover must-packs from others in your job field. <br>Never leave home worrying about your packing again! <br><br>Leave secure. Fly happy. </p>
-		<%= link_to 'Sign Up Now!', '#', class: "sign_up"%>
+		<button class="pure-button pure-button-primary">
+			<%= link_to 'Sign Up Now!', signup_path, class: "sign_up"%>
+		</button>
 	</div>
 	</body>
 

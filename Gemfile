@@ -3,6 +3,19 @@ ruby '2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
+gem 'bootstrap-sass', '2.3.2.0'
+gem 'bcrypt-ruby', '3.0.0'
+gem 'faker', '1.1.2'
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
+
+group :development, :test do
+	gem 'rspec-rails', '2.13.1'
+end
+
+group :test do
+	gem 'capybara', '2.1.0'
+end
 
 # Use pg as the database for Active Record
 gem 'pg', '0.15.1'
@@ -34,6 +47,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Use PureCSS for Rails 
+gem 'pure-css-rails', "~> 0.3.0"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
