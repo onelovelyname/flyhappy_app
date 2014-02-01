@@ -23,7 +23,7 @@ p {
 /* Home */
 
 body.home {
-	background-image: image_path('airport7.jpg');
+	background-image: asset-url('airport7.jpg');
 	background-width: 100%;
 	background-repeat: no-repeat;
 }
