@@ -1,6 +1,6 @@
 <div class="container">
 	<h1>Sign in</h1>
-	<%= form_for(:session, url: sessions_path, :html=>{:class => 'pure-form-aligned'}) do |f| %>
+	<%= form_for(:session, url: sessions_path, :html=>{:class => 'pure-form pure-form-aligned'}) do |f| %>
 
 		<fieldset>
 			<div class="pure-control-group">
@@ -13,8 +13,10 @@
 			    <%= f.password_field :password %>
 			</div>
 		</fieldset>
-	      
+	    
+	    <div class="submit-button">
 	      <%= f.submit "Sign in", class: "pure-button pure-button-primary" %>
+	    </div>
 	    <% end %>
 
    </div>

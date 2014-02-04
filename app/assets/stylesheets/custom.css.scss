@@ -30,15 +30,13 @@ $grayMediumLight: #eaeaea;
   }
 }
 
-.field_with_errors {
-  @extend .control-group;
-  @extend .error;
-}
 
 /* Modal */
 
 .modal-title {
 	text-align: center;
+  font-family: "Droid Sans", "Arial", sans-serif;
+
 }
 
 fieldset {
@@ -47,13 +45,18 @@ fieldset {
 div.pure-control-group {
 	height: 30px;
 	padding: 5px;
-	margin: 5px;
-	font-size: 1em !important;
+	margin: 20px;
 }
 
 input[type="text"], input[type="password"] {
-  margin: 0px;
+  margin: 10px;
+  font-family: "Droid Sans", "Arial", sans-serif;
+  padding: 5px;
+  font-size: 1em !important;
 }
 
-.modal-body.pure-button, .modal-body.pure-button-primary {
+.submit-button {
+  text-align: right;
 }
+
+

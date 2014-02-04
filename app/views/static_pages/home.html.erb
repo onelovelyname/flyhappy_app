@@ -4,6 +4,7 @@
 		<p class="home">Input your packing list for upcoming travel. <br>Discover must-packs from others in your job field. <br>Never leave home worrying about your packing again! <br><br>Leave secure. Fly happy. </p>
 		
 		<!-- Button trigger Modal -->
+
 		<button class="pure-button pure-button-primary" data-toggle="modal" data-target="#myModal">
   			Sign Up Now!
 		</button>
@@ -19,49 +20,51 @@
 	</div>
 </body>
 
-	<div class="modal hide fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-			    <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-			        <h2 class="modal-title" id="myModalLabel">Sign up for Flyhappy!</h2>
-			    </div>
-				<div class="modal-body">
-				 <%= form_for(@user, :html=>{:class => 'pure-form-aligned'}) do |f| %>
-				 
-				 	<fieldset>
-					 	<div class="pure-control-group">
-					      	<%= f.label :name %>
-					      	<%= f.text_field :name %>
-				      	</div>
 
-				      	<div class="pure-control-group">
-					    	<%= f.label :email %>
-					   	    <%= f.text_field :email %>
-					   	</div>
 
-					   	<div class="pure-control-group">
-						    <%= f.label :password %>
-						    <%= f.password_field :password %>
-						</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		    <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h2 class="modal-title" id="myModalLabel">Sign up for Flyhappy!</h2>
+		    </div>
+			<div class="modal-body">
+			 <%= form_for(@user, :html=>{:class => 'pure-form pure-form-aligned'}) do |f| %>
+		 
+			 	<fieldset>
+				 	<div class="pure-control-group">
+				      	<%= f.label :name %>
+				      	<%= f.text_field :name %>
+			      	</div>
 
-						<div class="pure-control-group">
-				    		<%= f.label :password_confirmation, "Confirmation" %>
-				   		 	<%= f.password_field :password_confirmation %>
-				   		</div>
+			      	<div class="pure-control-group">
+				    	<%= f.label :email %>
+				   	    <%= f.text_field :email %>
+				   	</div>
 
-				   		<div class="pure-control-group">
-				        	<%= f.label :industry %>
-				        	<%= f.text_field :industry %>
-				        </div>
-
-					</fieldset>
+				   	<div class="pure-control-group">
+					    <%= f.label :password %>
+					    <%= f.password_field :password %>
 					</div>
-					<div class="modal-footer">
-				        <button type="button" class="pure-button" data-dismiss="modal">Close</button>
-				      	<%= f.submit "Sign up", class: "pure-button pure-button-primary" %>
-					</div>
-			    <% end %>
-			</div>
+
+					<div class="pure-control-group">
+			    		<%= f.label :password_confirmation, "Confirmation" %>
+			   		 	<%= f.password_field :password_confirmation %>
+			   		</div>
+
+			   		<div class="pure-control-group">
+			        	<%= f.label :industry %>
+			        	<%= f.text_field :industry %>
+			        </div>
+
+				</fieldset>
+				</div>
+				<div class="modal-footer">
+			        <button type="button" class="pure-button" data-dismiss="modal">Close</button>
+			      	<%= f.submit "Sign up", class: "pure-button pure-button-primary" %>
+				</div>
+		    <% end %>
 		</div>
 	</div>
+</div>
