@@ -42,11 +42,6 @@ $grayMediumLight: #eaeaea;
 fieldset {
   border-style: none !important;
 }
-div.pure-control-group {
-	height: 30px;
-	padding: 5px;
-	margin: 20px;
-}
 
 input[type="text"], input[type="password"] {
   margin: 10px;
@@ -57,6 +52,10 @@ input[type="text"], input[type="password"] {
 
 .submit-button {
   text-align: right;
+}
+
+.modal-footer {
+  margin: 0px;
 }
 
 

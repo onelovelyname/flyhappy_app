@@ -18,5 +18,12 @@
 	      <%= f.submit "Sign in", class: "pure-button pure-button-primary" %>
 	    </div>
 	    <% end %>
+	    <div>
+		    <p>If you don't have an account: </p>
+		    <button class="pure-button pure-button-primary" data-toggle="modal" data-target="#myModal">
+	  			Sign Up Now!
+			</button>
+			<%= render 'shared/signup_form' %>
+		</div>
 
    </div>
