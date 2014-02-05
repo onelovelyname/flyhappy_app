@@ -70,8 +70,10 @@ FlyhappyApp::Application.configure do
   config.i18n.fallbacks = true
 
 
+
   # Serve static assets
   config.serve_static_assets = true
+  config.assets.compile = true
 
 
   # Send deprecation notices to registered listeners.
