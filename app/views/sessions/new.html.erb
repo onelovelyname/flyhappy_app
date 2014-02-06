@@ -1,4 +1,4 @@
-<div class="container">
+<div class="style">
 	<h1>Sign in</h1>
 	<%= form_for(:session, url: sessions_path, :html=>{:class => 'pure-form pure-form-aligned'}) do |f| %>
 
@@ -14,13 +14,13 @@
 			</div>
 		</fieldset>
 	    
-	    <div class="submit-button">
+	    <div>
 	      <%= f.submit "Sign in", class: "pure-button pure-button-primary" %>
 	    </div>
 	    <% end %>
 	    <div>
 		    <p>If you don't have an account: </p>
-		    <button class="pure-button pure-button-primary" data-toggle="modal" data-target="#myModal">
+		    <button class="pure-button" data-toggle="modal" data-target="#myModal">
 	  			Sign Up Now!
 			</button>
 			<%= render 'shared/signup_form' %>

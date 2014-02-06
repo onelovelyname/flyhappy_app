@@ -1,8 +1,11 @@
 class StaticPagesController < ApplicationController
-  def home
-  	@user = User.new
-  end
+  	def home
+	  	@user = User.new
 
-  def about
-  end
+	  	
+	end
+
+    def about
+    end
+
 end

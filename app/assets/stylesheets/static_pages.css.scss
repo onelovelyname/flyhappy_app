@@ -37,6 +37,13 @@ nav.home {
 	padding: 0px;
 }
 
+.navbar {
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 1px solid transparent;
+}
+
 div.style {
 	background-color: rgba(255, 255, 255, 0.7);
 	float: center;
