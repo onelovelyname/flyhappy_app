@@ -9,17 +9,17 @@
 
 	  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
 	</head>
-
+	<%= render 'layouts/header' %>
 	<body>
-		<%= render 'layouts/header' %>
 		<div class="container">
 			<% flash.each do |key, value| %>
         		<div class="alert alert-<%= key %>"><%= value %></div>
     	  	<% end %>
-			<div>
-				<%= yield %>
-			</div>
+		<div>
+		<%= yield %>
+		</div>
 		<%= debug(params) if Rails.env.development? %>
 		</div>
+
 	</body>
 </html>

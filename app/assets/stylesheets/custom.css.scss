@@ -35,7 +35,7 @@ $grayMediumLight: #eaeaea;
 
 .modal-title {
 	text-align: center;
-  font-family: "Georgia", "Times New Roman", serif;
+  font-family: "Roboto Slab", "Gabriela", "Georgia", serif;
 
 }
 
@@ -45,7 +45,7 @@ fieldset {
 
 input[type="text"], input[type="password"] {
   margin: 10px;
-  font-family: "Droid Sans", "Arial", sans-serif;
+  font-family: "Roboto Slab", "Gabriela", "Georgia", serif;
   padding: 5px;
   font-size: 1em !important;
 }
@@ -54,8 +54,41 @@ input[type="text"], input[type="password"] {
   text-align: right;
 }
 
+.modal-content {
+  margin-top: 50px;
+}
 .modal-footer {
   margin: 0px;
 }
 
+/* header */
+
+ul.home {
+  margin: 0px;
+  float: right;
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+li.home {
+  display: inline;
+  padding: 10px;
+}
+
+a.home {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+a.sign_up {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo {
+  padding: 15px;
+  height: 70px;
+  vertical-align: center;
+}
 

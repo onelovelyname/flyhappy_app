@@ -1,11 +1,25 @@
-<head>
-	<title>FlyHappy</title>
-</head>
-<body class="home">
-<nav class="home">
-	<%= link_to image_tag("logo_white2.png", alt: "logo", class: "logo"), root_path %>
-	<ul class="home">
-		<li class="home"><%= link_to 'About', about_path, class: "home"%></li>
-		<li class="home"><%= link_to 'Sign In', signin_path, class: "home"%></li>
-	</ul>
-</nav>
+<header class="navbar">
+	<nav class="home">
+		<%= link_to image_tag("logo_white2.png", alt: "logo", class: "logo"), root_path %>
+		<ul class="home">
+			<li class="home"><%= link_to 'About', about_path, class: "home"%></li>
+			<% if signed_in? %>
+				<li class="home"><%= link_to "Departures Board", '#', class: "home" %></li>
+				<li id="fat-menu" class="dropdown home">
+					<a href='#' class="dropdown-toggle" data-toggle="dropdown">
+					Account <b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><%= link_to "Profile", current_user %></li>
+						<li><%= link_to "Settings", '#' %></li>
+						<li class="divider"></li>
+						<li><%= link_to "Sign out", signout_path, method: "delete" %>
+						</li>
+					</ul>
+				</li>
+			<% else %>
+				<li class="home"><%= link_to "Sign in", signin_path, class: "home" %></li>
+			<% end %>
+		</ul>
+	</nav>
+</header>

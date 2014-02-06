@@ -6,15 +6,19 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	font-family: "Droid Sans", "Arial", sans-serif;
+	background-image: asset-url('airport7.jpg');
+
 
 }
 
 h1 {
 	font-size: 2.5em;
+	font-family: "Roboto Slab", "Gabriela", "Georgia", serif;
+
 }
 
 p {
+	font-family: "Roboto", sans-serif;
 	font-size: 1em;
 	line-height: 30px;
 	padding: 10px;
@@ -23,7 +27,6 @@ p {
 /* Home */
 
 body.home {
-	background-image: asset-url('airport7.jpg');
 	background-width: 100%;
 	background-repeat: no-repeat;
 }
@@ -34,43 +37,12 @@ nav.home {
 	padding: 0px;
 }
 
-div.home {
+div.style {
 	background-color: rgba(255, 255, 255, 0.7);
 	float: center;
 	padding: 30px;
-	margin: 30px 20%;
+	margin: 0px 20%;
 	text-align: center;
-}
-
-ul.home {
-	list-style: none;
-	display: inline-block;
-	float: right;
-	padding: 10px;
-	margin: 0px;
-
-}
-
-li.home {
-	display: inline-block;
-	padding: 10px;
-}
-
-a.home {
-	color: #fff;
-	text-decoration: none;
-
-}
-
-a.sign_up {
-	color: #fff;
-	text-decoration: none;
-}
-
-.logo {
-	padding: 15px;
-	height: 70px;
-	vertical-align: center;
 }
 
 p.home {
@@ -80,3 +52,6 @@ h1.home {
 	margin: 0px;
 }
 
+.pure-button {
+	  font-family: "Roboto Slab", "Gabriela", "Georgia", serif;
+}
